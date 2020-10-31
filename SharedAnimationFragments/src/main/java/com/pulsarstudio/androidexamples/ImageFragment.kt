@@ -32,12 +32,16 @@ class ImageFragment : Fragment() {
         val imageView = inflater.inflate(R.layout.fragment_image, container, false) as ImageView
         val resId = arguments?.getInt(KEY_IMAGE_RESOURCE) ?: R.drawable.a102344
         imageView.setImageResource(resId)
-
         imageView.transitionName = resId.toString()
+
+        setUpAnimation()
+
+        return imageView
+    }
+
+    fun setUpAnimation(){
         val transition = TransitionInflater.from(context).inflateTransition(R.transition.shared_image)
         sharedElementEnterTransition = transition
-
         postponeEnterTransition(500,TimeUnit.MILLISECONDS)
-        return imageView
     }
 }
