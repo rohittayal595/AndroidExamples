@@ -1,3 +1,4 @@
+include ':SharedTextAnimation'
 include ':SharedAnimationAcitivities'
 include ':SharedAnimationFragments'
 rootProject.name = "AndroidExamples"

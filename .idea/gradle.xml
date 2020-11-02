@@ -13,6 +13,7 @@
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/SharedAnimationAcitivities" />
             <option value="$PROJECT_DIR$/SharedAnimationFragments" />
+            <option value="$PROJECT_DIR$/SharedTextAnimation" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />
